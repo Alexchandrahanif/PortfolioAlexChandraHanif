@@ -8,8 +8,95 @@
     <title>Portfolio Tailwind CSS</title>
   </head>
   <body>
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <!-- kiri -->
+          <div class="px-4">
+            <a href="#home" class="text-primary font-bold block py-6"
+              >AlexChandraHanif</a
+            >
+          </div>
+          <!-- kiri -->
+
+          <!-- kanan -->
+          <div class="flex items-center p-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-0.5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- kanan -->
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
     <!-- Hero Section Start -->
-    <section id="hero" class="pt-36">
+    <section id="home" class="pt-36">
       <div class="container">
         <div class="flex flex-wrap lg:px-14">
           <!-- Kanan -->
@@ -24,7 +111,7 @@
               Full-stack JavaScript Developer
             </h2>
             <p class="font-medium text-slate-400 mb-10 leading-relaxed">
-              Belajar We Programming sangat mudah dan menyenangkan
+              Belajar Web Programer sangat mudah dan menyenangkan
               <span class="font-bold text-red-700">bukan ? </span>
             </p>
             <a
@@ -70,14 +157,14 @@
       <div class="container">
         <div class="flex flex-wrap">
           <!-- Kiri -->
-          <div class="w-full p-4 mb-10">
+          <div class="w-full p-4 mb-10 lg:w-1/2">
             <h4 class="font-bold uppercase text-primary bt-3 text-lg">
               Tentang Saya
             </h4>
-            <h2 class="font-bold text-3xl bt-3 text-dark max-w-xl">
+            <h2 class="font-bold text-3xl bt-3 text-dark max-w-xl lg:text-4xl">
               Yuk jadi Programmer!!!
             </h2>
-            <p class="font-medium text-secondary">
+            <p class="font-medium text-secondary lg:text-lg">
               Menjadi Seorang Programmer sangat menyenangkan loh, kamu bisa
               kerja dari mana saja, punya penghasilan tinggi, kerja santai,
               tidak ada tekanan, tidak harus begadang, dan yg paling penting
@@ -87,11 +174,13 @@
           <!-- Kiri -->
 
           <!-- Kanan -->
-          <div class="w-full px-4">
-            <h3 class="font-bold uppercase text-primary bt-3 text-lg">
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="font-bold uppercase text-primary bt-3 text-lg lg:text-2xl lg:pt-10"
+            >
               Mari Belajar Ngoding
             </h3>
-            <p class="font-medium text-secondary text-base mb-5">
+            <p class="font-medium text-secondary text-base mb-5 lg:text-lg">
               Belajar ngoding sangatlah menyenangkan dan sangat asik, tidak
               menimbul kan stress, gampang dipahami, dan mudah dimengerti, dan
               cocok untuk semua kalangan usia.
@@ -193,5 +282,114 @@
       </div>
     </section>
     <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="pt-36 pb-32 bg-slate-200">
+      <div class="container">
+        <!-- Project -->
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h3
+              class="font-semibold text-xl text-primary mb-2 sm:text-3xl lg:text-4xl"
+            >
+              Portfolio
+            </h3>
+            <h2
+              class="font-bold text-3xl text-dark mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Project Terbaru
+            </h2>
+            <p class="font-medium text-secondary md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quae sunt reiciendis saepe eum fuga doloribus. Modi tempora cumque
+              eius?
+            </p>
+          </div>
+        </div>
+        <!-- End Project -->
+
+        <!-- Foto Project -->
+        <div class="w-full px-4 flex flex-wrap justify-center">
+          <div class="mb-2 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist//img//test1.png" alt="test1" width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-2 mb-2">Project 1</h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              repellat corrupti animi.
+            </p>
+          </div>
+          <div class="mb-5 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist//img//test2.png" alt="test1" width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-2 mb-2">Project 2</h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              repellat corrupti animi.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist//img//test3.png" alt="test1" width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-2 mb-2">Project 3</h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              repellat corrupti animi.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist//img//test4.png" alt="test1" width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-2 mb-2">Project 4</h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              repellat corrupti animi.
+            </p>
+          </div>
+        </div>
+        <!-- End Foto Project -->
+      </div>
+    </section>
+    <!-- Portfolio Section End-->
+
+    <!-- Client Section Start -->
+    <section id="clients" class="pt-36 pb-32 bg-slate-700">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <h3
+              class="font-semibold text-xl text-primary mb-2 sm:text-3xl lg:text-4xl"
+            >
+              Clients
+            </h3>
+            <h2
+              class="font-bold text-3xl text-white mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Yang Pernah Bekerja Sama
+            </h2>
+            <p class="font-medium text-secondary md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quae sunt reiciendis saepe eum fuga doloribus. Modi tempora cumque
+              eius?
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap justify-center items-center">
+            <a href="#" class="w-max-[12px] my-4 mx-4">
+              <img src="" alt="Google" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client Section End -->
+
+    <!-- Script -->
+    <script src="./dist//js//script.js"></script>
   </body>
 </html>
