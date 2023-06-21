@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/output.css" rel="stylesheet" />
+    <link href="dist/css/final.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
     <title>Portfolio Tailwind CSS</title>
   </head>
   <body>
@@ -15,7 +25,7 @@
         <div class="relative flex items-center justify-between">
           <!-- kiri -->
           <div class="px-4">
-            <a href="#home" class="block py-6 font-bold text-primary"
+            <a href="#home" class="block py-4 font-bold text-primary"
               >AlexChandraHanif</a
             >
           </div>
@@ -125,7 +135,7 @@
               Full-stack JavaScript Developer
             </h2>
             <p class="mb-10 font-medium leading-relaxed text-slate-400">
-              Belajar Web Programer sangat mudah dan menyenangkan
+              Belajar Ngoding sangat mudah dan menyenangkan
               <span class="font-bold text-red-700">bukan ? </span>
             </p>
             <a
